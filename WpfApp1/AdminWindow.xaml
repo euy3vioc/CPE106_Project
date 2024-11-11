@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="400" Width="400">
+    <Grid Margin="20">
+        <TextBox x:Name="txtEventName" HorizontalAlignment="Left" Margin="46,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCreateEvent" Content="Create Event" HorizontalAlignment="Left" Margin="171,59,0,0" VerticalAlignment="Top" Click="btnCreateEvent_Click_1"/>
+        <ComboBox x:Name="cbEvents" HorizontalAlignment="Left" Margin="79,84,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.157,1.295" SelectionChanged="cbEvents_SelectionChanged_1"/>
+        <Button x:Name="btnDeleteEvent" Content="Delete Event" HorizontalAlignment="Left" Margin="242,104,0,0" VerticalAlignment="Top" Click="btnDeleteEvent_Click_1"/>
+        <Button x:Name="btnRevokeSeat" Content="Revoke Seat" HorizontalAlignment="Left" Margin="242,177,0,0" VerticalAlignment="Top" Click="btnRevokeSeat_Click_1"/>
+        <ListBox x:Name="lbReservedSeats" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="54,131,136,21"/>
+        <Button x:Name="btnLogout" Content="Logout" HorizontalAlignment="Left" Margin="271,303,0,0" VerticalAlignment="Top" Click="btnLogout_Click_1"/>
+        <Label Content="Welcome, Admin" HorizontalAlignment="Left" Margin="106,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Seats Reserved:" HorizontalAlignment="Left" Margin="0,111,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

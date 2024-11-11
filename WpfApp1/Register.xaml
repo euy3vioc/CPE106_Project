@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Register" Height="400" Width="400">
+    <Grid Width="400" Height="400">
+        <Label Content="Register" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="newusertxt" HorizontalAlignment="Center" Margin="0,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="newfullnametxt" HorizontalAlignment="Center" Margin="0,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <PasswordBox x:Name="newpasswordtxt" HorizontalAlignment="Center" Margin="0,162,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Fullname:" HorizontalAlignment="Left" Margin="83,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="77,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="82,156,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
